@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What can JS do?</h2>
+    <p id="demo">Watch the content change--></p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML="Hello, World"'>Click me!</button>
+
+    <h2>Using JS to toggle between two images by using a button.</h2>
+    <button type="button" onclick='document.getElementById("changeImage").src="images/MK293.jpeg"'>Keyboard</button>
+    <img src="images/MK293.jpeg" id="changeImage" alt="">
+    <button type="button" onclick='document.getElementById("changeImage").src="images/MK2E3.jpeg"'>Mouse</button>
+
+    <h2>Using JS to change the font size of a para.</h2>
+    <p id="changeFontSize">click the button to view the change.</p>
+    <button type="button" onclick='document.getElementById("changeFontSize").style.fontSize="35px"'>Transform</button>
+
+    <h2>Using JS to hide elements.</h2>
+    <p id="changeDisplay">some text</p>
+    <button type="button" onclick='document.getElementById("changeDisplay").style.display="none"'>Click me!</button>
+
+    <h2>Using JS to show elements.</h2>
+    <p id="showDisplay" style="display: none;">Hey there!</p>
+    <button type="button" onclick='document.getElementById("showDisplay").style.display="block"'>Click me!</button>
+</body>
+</html>
