@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //using the slice method
+        let string="apple, banana, kiwi";
+        string.slice(7, 13);
+        //the output will be 'banana'
+
+        //using the substring method
+        let string1="apple, banana, kiwi";
+        string1.substring(7, 13);
+        //the output will be 'banana'
+
+        //using the substr method
+        let string2="apple, banana, kiwi";
+        string2.substr(7, 6);
+        //the output will be 'banana'
+
+        //using the replace method
+        function myFunction(){
+            let text=document.getElementById("replaceString").innerHTML;
+            document.getElementById("replaceString").innerHTML=text.replace("Universe", "Multiverse");
+        }
+
+        //to make replace method non case sensitive
+        function myFunction1(){
+            let text=document.getElementById("replaceString1").innerHTML;
+            document.getElementById("replaceString1").innerHTML=text.replace(/Universe/i, "Multiverse");
+        }
+
+        function myFunction2(){
+            let text=document.getElementById("replaceString2").innerHTML;
+            document.getElementById("replaceString2").innerHTML=text.replace(/universe/g, "Multiverse");
+        }
+
+        function lowerCase(){
+            let text=document.getElementById("lowercaseString").innerHTML;
+            document.getElementById("lowercaseString").innerHTML=text.toLowerCase();
+        }
+        
+        function upperCase(){
+            let text=document.getElementById("uppercaseString").innerHTML;
+            document.getElementById("uppercaseString").innerHTML=text.toUpperCase();
+        }
+
+        function concatStrings(){
+            let text=document.getElementById("concatenation").innerHTML;
+            document.getElementById("concatenation").innerHTML=text.concat(" world");
+        }
+
+        function trimString(){
+            let text=document.getElementById("trimstring").innerHTML;
+            document.getElementById("trimstring").innerHTML=text.trim();
+        }
+    </script>
+    <button onclick="myFunction()">only replace method</button>
+    <p id="replaceString">Marvel Cinematic Universe</p>
+
+    <button onclick="myFunction1()">replace method but not case sensitive</button>
+    <p id="replaceString1">Marvel Cinematic universe</p>
+
+    <button onclick="myFunction2()">replace method but checks for all occurrences</button>
+    <p id="replaceString2">Marvel Cinematic universe Cinematic universe</p>
+
+    <button onclick="lowerCase()">convert the sentence to lower case</button>
+    <p id="lowercaseString">HeLoO WoRld</p>
+
+    <button onclick="upperCase()">convert the sentence to upper case</button>
+    <p id="uppercaseString">HeLoO WoRld</p>
+
+    <button onclick="concatStrings()">concat strings "hello" to "cinematic universe"</button>
+    <p id="concatenation">hello</p>
+
+    <button onclick="trimString()">removes whitespace from the ends of the given string</button>
+    <p id="trimstring">              marvel cinematic universe                  </p>
+</body>
+</html>
