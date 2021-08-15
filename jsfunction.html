@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello(){
+            document.write("hello, world!");
+        }
+        function sayHello1(name, age){
+            document.write(name + " is " + age + " years old.");
+        }
+        function firstFunction(first, last){
+            var full;
+            full=first+last;
+            return full;
+        }
+        function secondFunction(){
+            var result;
+            result=firstFunction('booyah', 'baby');
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <p><button type="button" onclick="sayHello()">click me</button></p>
+    <input type="button" onclick="sayHello1('vedant', '19')" value="click me!">
+    <input type="button" onclick="secondFunction()" value="click me!">
+</body>
+</html>
