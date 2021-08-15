@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onClickFunction(){
+            alert("hello, world!");
+        }
+        function onMouseOver(){
+            document.write("mouse over");
+        }
+        function onMouseOut(){
+            document.write("mouse out");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="onClickFunction()" value="click me!">
+    <div onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+        <h2>Some text</h2>
+    </div>
+</body>
+</html>
