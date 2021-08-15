@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function alertFunction(){
+            alert("This is an alert dialog box!");
+            document.write("This is an alert dialog box!");
+        }
+        function confirmationBox(){
+            var confirmVal=confirm("Do you want to continue?Also this is a confirmation dialog box.");
+            if(confirmVal==true){
+                document.write("User accepted to continue.");
+            }
+            else{
+                document.write("User denied to continue.");
+            }
+        }
+        function promptBox(){
+            var prmptval=prompt("Enter your name: ", "Your name here!");
+            document.write("You entered: " + prmptval);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="alertFunction()" value="click me!">
+    <input type="button" onclick="confirmationBox()" value="click me!">
+    <input type="button" onclick="promptBox()" value="click me!">
+</body>
+</html>
