@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pageRedirect1(){
+            window.location="https://www.apple.com/in/";
+        }
+        /*function pageRedirect2(){
+            window.location="https://www.apple.com/in/";
+            document.write("you will be redirected to the apple india website in 5 seconds.");
+            setTimeout(pageRedirect2(), 1000);
+        }*/
+        var browserName = navigator.appName;
+        if(browserName=="Apple"){
+            window.location="https://www.google.com/?client=safari";
+        }
+        else if(browserName=="Google"){
+            window.location="https://www.apple.com/in/";
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="pageRedirect1()" value="click me!">
+</body>
+</html>
