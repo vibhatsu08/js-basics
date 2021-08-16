@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //Boolean prototype method
+        function book(title, author){
+            this.title = title;
+            this.author = author;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        //Boolean properties
+        //Boolean constructor method
+        var bool = new Boolean();
+        document.write("bool.contructor() is: " + bool.constructor + "<br>"); 
+        //Boolean prototype method
+        var myBook = new book("tech", "vedant");
+        book.prototype.price = null;
+        myBook.price=100;
+
+        document.write("The title of the book is: " + myBook.title + "<br>");
+        document.write("The author of the book is: " + myBook.author + "<br>");
+        document.write("The price of the book is: " + myBook.price) + "<br>";
+    </script>
+</body>
+</html>
