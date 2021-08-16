@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //number properties
+        //MAX_VALUE
+        function showMaxVal(){
+            var maxVal=Number.MAX_VALUE;
+            document.write("The maximum value of the number is: " + maxVal);
+        }
+        //MIN_VALUE
+        function showMinVal(){
+            var minVal=Number.MIN_VALUE;
+            document.write("The minimum value of the number is: " + minVal);
+        }
+        //NEGATIVE_INFINITY
+        function negativeInfinity(){
+            var negVal=-(Number.MAX_VALUE*2);
+            if(negVal==Number.NEGATIVE_INFINITY){
+                document.write("The smallest negative infinity value is: " + negVal);
+            }
+        }
+        //POSITIVE_INFINITY
+        function positiveInfinity(){
+            var posVal=(Number.MAX_VALUE*2);
+            if(posVal==Number.POSITIVE_INFINITY){
+                document.write("The largest positive infinity value is: " + posVal);
+            }
+        }
+
+        //NUMBER METHODS
+        //toExponential()
+        
+    </script>
+</head>
+<body>
+    <input type="button" onclick="showMaxVal()" value="show max value"><br>
+    <input type="button" onclick="showMinVal()" value="show min value"><br>
+    <input type="button" onclick="negativeInfinity()" value="show min neg value"><br>
+    <input type="button" onclick="positiveInfinity()" value="show max pos value"><br>
+    <script>
+        //constructor method
+        var val=new Number(17.08);
+        document.write("The number is: " + val.constructor);
+    </script>
+</body>
+</html>
