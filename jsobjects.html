@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var employee = new Object();
+        var books = new Array("vedant", "steve", "tony");
+        var day = new Date("December 17th 2002");
+
+        //example 1
+        //create an object
+        var books = new Object(); //object
+        //assigning properties to that object
+        books.subject1 = "math";
+        books.author = "T.Stark";
+
+        function displayValues(){
+            document.write(books.subject1);
+            document.write(books.author);
+        }
+
+        //example 2
+        function booksSubjects(subject, author){
+            this.subject = subject;
+            this.author = author;
+        }
+
+        //example 3
+        //defining methods as objects
+        function addPrice(amount){
+            this.price=amount;
+        }
+        function addBook(title, author){
+            this.title=title;
+            this.author=author;
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="displayValues()" value="click me!">
+    <br>
+    <script>
+        var mySubject = new booksSubjects("cs", "t.stark");
+        document.write("book subject is: " + mySubject.subject);
+        document.write("book subject is: " + mySubject.author);
+
+        var myBook=new addBook("tech", "vedant");
+        myBook.addPrice(1000);
+
+        document.write("The title of this book is: " + myBook.title);
+        document.write("The author of this book is: " + myBook.author);
+        document.write("The price of this book is: " + myBook.price);
+    </script>
+</body>
+</html>
