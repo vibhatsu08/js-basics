@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String properties
+        //constructor property
+        var str = new String("hello world!");
+        document.write("str.constructor is: " + str.constructor + "<br/>");
+
+        //length property
+        var str1 = "this is the string.";
+        var length = str1.length;
+        document.write("the length of the string : " + str1+ " : is : " + length + "<br/>");
+
+        //charAt() method
+        var str2 = "hello world!";
+        document.write("The charAt(0) is: " + str2.charAt(0) + "<br/>");
+        document.write("The charAt(6) is: " + str2.charAt(6) + "<br/>");
+
+        //charCodeAt() method
+        var str3 = "google";
+        document.write("The charCodeAt(0): " + str3.charCodeAt(0) + "<br/>");
+        document.write("The charCodeAt(6): " + str3.charCodeAt(4) + "<br/>");
+
+        //concat method
+        var str4 = "first sentence!";
+        var str5 = "second sentence!";
+        var newStr = str4.concat(str5);
+        document.write(newStr + "<br/>");
+
+        //indexOf() method
+        var str6 = "this is a big string!";
+        document.write("The indexOf('a')) is: " + str6.indexOf("a"));
+
+        //lastIndexOf() method
+        var str7 = "this is the one and only one string.";
+        document.write("The lastIndexOf('one') is: " + str7.lastIndexOf("one"));
+    </script>
+</body>
+</html>
